@@ -11,5 +11,15 @@
 /*HEADER*/
 
 /*MAIN*/
+h2 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 31px;
+	display: flex;
+	align-items: center;
+}
+
 
 /*FOOTER*/
