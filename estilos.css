@@ -29,6 +29,12 @@ h2{
 	font-weight: 600;
 	font-size: 26px;
 	line-height: 31px;
+	color: #1F518F;
+}
+
+.servicio1{
+	display: flex;
+	align-items: center;
 }
 
 /*FOOTER*/
