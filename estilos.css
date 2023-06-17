@@ -36,6 +36,9 @@ h2{
 	display: flex;
 	align-items: center;
 }
+.subtitulo{
+	color: #3F6B25;
+}
 
 /*FOOTER*/
 footer{
