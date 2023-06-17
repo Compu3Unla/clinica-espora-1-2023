@@ -31,11 +31,13 @@ h2{
 	line-height: 31px;
 	color: #1F518F;
 }
-
+	/*MAIN SERVICIOS.HTML*/
 .servicio1{
 	display: flex;
 	align-items: center;
 }
+
+	/*MAIN FORMULARIO.HTML*/
 
 /*FOOTER*/
 footer{
@@ -44,3 +46,7 @@ footer{
 	height: 446px;
 }
 
+@media screen and (max-width: 360px ) { /*una vez que tengamos todos los html vemos como armamos la vista para celular*/
+	
+
+}
