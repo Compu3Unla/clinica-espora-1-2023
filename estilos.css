@@ -15,6 +15,109 @@ header{
 	height: 205px;
 	background-color: #f3f3f3;
 }
+header nav{
+	display:flex;
+	flex-direction: row;
+	list-style: none;
+}
+.barra_navegacion{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+header ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+header ul li a{
+	padding: 10px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+}
+.boton_menu{
+	gap: 8px;
+}
+.menu{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	padding:10px;
+}
+.container-logo-contacto{
+	padding-top: 38px;
+	padding-bottom: 38px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: center;
+}
+.contacto{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	gap: 20px;
+}
+.telefono{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 20px;
+}
+.text_container_telefono{
+	display:flex;
+	flex-direction: column;
+}
+#telefono_icon hover{
+	transform: translateX(291px);
+}
+.text_container_mail{
+	visibility: hidden;
+}
+.text_container_telefono{
+  visibility: hidden;
+}
+.text_container_ubicacion{
+	visibility: hidden;
+}
+.mail{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 20px;
+}
+.text_container_mail{
+	display: flex;
+	flex-direction: column;
+}
+.ubicacion{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 20px;
+}
+.text_container_ubicacion{
+	display: flex;
+	flex-direction: column;
+}
+
+header p, a{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 139.2%;
+	text-align: right;
+	color: #023069;
+}
 
 /*MAIN*/
 main{
@@ -43,7 +146,9 @@ main h2{
 	border-bottom: 2px solid #E5E5E5;
 }
 .whatsapp{
-	position: fixed;
+	position: absolute;
+	left: 1726px;
+	top: 1393px;
 }
 
 /*BOTONES DEL INDEX*/
