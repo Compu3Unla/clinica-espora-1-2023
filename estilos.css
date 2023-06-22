@@ -27,7 +27,7 @@ h2{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 26px;
+	font-size: 19px;
 	line-height: 31px;
 	color: #1F518F;
 }
@@ -35,6 +35,9 @@ h2{
 .servicio1{
 	display: flex;
 	align-items: center;
+}
+.subtitulo{
+	color: #3F6B25;
 }
 
 	/*MAIN FORMULARIO.HTML*/
