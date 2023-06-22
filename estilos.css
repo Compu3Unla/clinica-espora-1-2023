@@ -37,12 +37,6 @@ h2{
 	flex-direction: column;
 }
 	/*MAIN SERVICIOS.HTML*/
-.servicio1{
-	display: flex;
-
-	align-items: center;
-	margin-top:20px;
-}
 
 .cajatitulo{
 	border-radius: 35px 35px 0px 35px;
