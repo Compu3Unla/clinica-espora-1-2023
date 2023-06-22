@@ -65,6 +65,10 @@ input {
 	background-color: #ddd;
 	margin-bottom: 5px;
 }
+.contenido-formulario {
+	margin: 50px;
+	width: 60%;
+}
 /*FOOTER*/
 footer{
 	background-color: #1F518F;
