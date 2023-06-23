@@ -12,21 +12,21 @@
 			<img src="img/header/_svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
 			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
 				<div class="telefono">
-						<img src="img/header/_a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">
-						<div class="text_container_telefono">
-							<p> Contactanos al teléfono </p>
-							<p style="font-size: 24px">(011) 5034-6000</p>
-						</div>
+					<img src="img/header/_a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">	
+					<div class="text_container_telefono">
+						<p> Contactanos al teléfono </p>
+						<p style="font-size: 24px">(011) 5034-6000</p>
 					</div>
+				</div>
 				<div class="mail">
-					<img src="img/header/_a_email.svg" width= "60px" height= "60px" alt= "icono email">
+					<img src="img/header/_a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
 					<div class="text_container_mail">
 						<p>Envianos tus consultas a:</p>
 						<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
 					</div>
 				</div>
 				<div class="ubicacion">
-					<img src="img/header/_a_maps.svg" width= "60px" height= "60px" alt= "icono maps">
+					<img src="img/header/_a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
 					<div class="text_container_ubicacion">
 						<p>Nuestra dirección:</p>
 						<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
@@ -38,7 +38,7 @@
 			<div class="boton_menu">
 				<img src="img/header/_svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
 				<a class="menu">Menu</a>
-			</div>	
+			</div>
 			<nav>
 				<ul>
 					<li><a>Home</a></li>
@@ -50,93 +50,65 @@
 		</div>
 	</header>
 	<main>
-		<img src="img/main/banner_index.jpg" width= "1920px" height= "491px" alt= "banner con numeros de telefono">
+		<img src="img/main/banner_index.jpg" class="bannerindex" width= "1920px" height= "491px" alt= "banner con numeros de telefono">
 		<div class="contenido_atenciones">
 			<h2>CONOCÉ NUESTRAS ATENCIONES</h2>
 			<div class="button_container">
 				<a href="#">
-					<button class="boton_servicios">
-						<img src="img/header/imagenes_menu/_svg_servicios.svg" width= "58.68px" height= "51.23" alt= "icono de servicios">
-						<p>SERVICIOS</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_servicios.svg" width= "58.68px" height= "51.23" alt= "icono de servicios">
+					<p>SERVICIOS</p>	
 				</a>
 				<a href="#">
-					<button class="boton_infraestructura">
-						<img src="img/header/imagenes_menu/_svg_infraestructura.svg" width= "70px" height= "60" alt= "icono de infraestructura">
-						<p>INFRAESTRUCTURA</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_infraestructura.svg" width= "70px" height= "60" alt= "icono de infraestructura">
+					<p>INFRAESTRUCTURA</p>
 				</a>
 				<a href="#">
-					<button class="boton_especialidades">
-						<img src="img/header/imagenes_menu/_svg_especialidades.svg" width= "41.51px" height="59.46px" alt= "icono de especialidades">
-						<p>ESPECIALIDADES</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_especialidades.svg" width= "41.51px" height="59.46px" alt= "icono de especialidades">
+					<p>ESPECIALIDADES</p>
 				</a>
 				<a href="#">
-					<button class="boton_obra_social">
-						<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de obra social">
-						<p>OBRA SOCIAL</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de obra social">
+					<p>OBRA SOCIAL</p>
 				</a>
 				<a href="#">
-					<button class="boton_servicio_guardias">
-						<img src="img/header/imagenes_menu/_svg_servicio_de_guardias.svg" width= "60px" height="60px" alt= "icono de servicio de guardias">
-						<p>SERVICIO DE GUARDIAS</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_servicio_de_guardias.svg" width= "60px" height="60px" alt= "icono de servicio de guardias">
+					<p>SERVICIO DE GUARDIAS</p>
 				</a>
 				<a href="#">
-					<button class="boton_horarios_visita">
-						<img src="img/header/imagenes_menu/_svg_horarios_de_visita.svg" width= "42px" height="42px" alt= "icono de horarios de visita">
-						<p>HORARIOS DE VISITA</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_horarios_de_visita.svg" width= "42px" height="42px" alt= "icono de horarios de visita">
+					<p>HORARIOS DE VISITA</p>
 				</a>
 				<a href="#">
-					<button class="boton_cuerpo_medico">
-						<img src="img/header/imagenes_menu/_svg_cuerpo_medico.svg" width= "54px" height="54px" alt= "icono de cuerpo medico">
-						<p>CUERPO MÉDICO</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_cuerpo_medico.svg" width= "54px" height="54px" alt= "icono de cuerpo medico">
+					<p>CUERPO MÉDICO</p>
 				</a>
 				<a href="#">
-					<button class="boton_residencias">
-						<img src="img/header/imagenes_menu/_svg_residencias.svg" width= "64px" height="40px" alt= "icono de residencias">
-						<p>RESIDENCIAS</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_residencias.svg" width= "64px" height="40px" alt= "icono de residencias">
+					<p>RESIDENCIAS</p>
 				</a>
 				<a href="#">
-					<button class="boton_como_llegar">
-						<img src="img/header/imagenes_menu/_svg_como_llegar.svg" width= "45px" height="57px" alt= "icono de como llegar">
-						<p>COMO LLEGAR</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_como_llegar.svg" width= "45px" height="57px" alt= "icono de como llegar">
+					<p>COMO LLEGAR</p>
 				</a>
 				<a href="#">
-					<button class="boton_visualmedia">
-						<img src="img/header/imagenes_menu/_svg_visual_media.svg" width= "60.52px" height="40.13px" alt= "icono de visual media">
-						<p>VISUAL MEDIA</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_visual_media.svg" width= "60.52px" height="40.13px" alt= "icono de visual media">
+					<p>VISUAL MEDIA</p>
 				</a>
 				<a href="#">
-					<button class="boton_espora_salud">
-						<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de espora salud">
-						<p>ESPORA SALUD</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de espora salud">
+					<p>ESPORA SALUD</p>
 				</a>
 				<a href="#">
-					<button class="boton_solicitar_promotor">
-						<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de solicitar promotor">
-						<p>SOLICITAR PROMOTOR</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de solicitar promotor">
+					<p>SOLICITAR PROMOTOR</p>
 				</a>
 				<a href="#">
-					<button class="boton_resultadoslab">
-						<img src="img/header/imagenes_menu/_svg_resultados_lab.svg" width= "65px" height="42.63px" alt= "icono de cuerpo medico">
-						<p>RESULTADOS LAB</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_resultados_lab.svg" width= "65px" height="42.63px" alt= "icono de cuerpo medico">
+					<p>RESULTADOS LAB</p>
 				</a>
 				<a href="#">
-					<button class="boton_prestadores">
-						<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de prestadores">
-						<p>PRESTADORES</p>
-					</button>
+					<img src="img/header/imagenes_menu/_svg_prestadores.svg" width= "55px" height="40px" alt= "icono de prestadores">
+					<p>PRESTADORES</p>
 				</a>
 			</div>
 		</div>

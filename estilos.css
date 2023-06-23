@@ -76,17 +76,36 @@ header ul li a{
 	display:flex;
 	flex-direction: column;
 }
-#telefono_icon hover{
-	transform: translateX(291px);
+
+/* ANIMACIONES DEL HEADER*/
+#telefono_icon{
+	z-index: 1;
+	position: relative;
+    left: 1115px;
+	
 }
+#mail_icon{
+	z-index: 1;
+	position: relative;
+    left: 863px;
+}
+#ubicacion_icon{
+	z-index: 1;
+	position: relative;
+    left: 532px;
+}
+
 .text_container_mail{
 	visibility: hidden;
+	z-index: 1;
 }
 .text_container_telefono{
-  visibility: hidden;
+  	visibility: hidden;
+	z-index: 1;
 }
 .text_container_ubicacion{
 	visibility: hidden;
+	z-index: 1;
 }
 .mail{
 	display: flex;
@@ -128,6 +147,10 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.bannerindex{
+	width: 100%;
+	height: auto;
+}
 .contenido_atenciones{
 	margin: 50px;
 	width: 60%;
@@ -158,25 +181,38 @@ main h2{
     flex-wrap: wrap;
 }
 
-button{
+.button_container a{
 	width: 191px;
 	height: 147px;
 	border-radius: 15px;
 	border-color: #FFFFFF;
-	box-shadow: -1px 0px 6px -1px; 
+	box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
 	color: rgba(0, 0, 0, 0.25);
 	padding: 10px;
 	margin: 10px;
+	flex-shrink: 0;
+	text-decoration: none;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.button_container a:hover{
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+  
 
 
-button p{
+
+.button_container p{
 	font-family: 'Inter';
 	font-style: sans-serif;
 	font-weight: 600;
 	font-size: 13px;
 	line-height: 31px;
 	color: #1F518F;
+	display: flex;
+    justify-content: center;
 }
 
 	/*MAIN SERVICIOS.HTML*/
