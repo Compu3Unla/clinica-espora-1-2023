@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 /*GENERALES*/
 *{
-	font-family: 'Inter', serif;
+	font-family: 'Inter', sans-serif;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -15,12 +15,145 @@ header{
 	height: 205px;
 	background-color: #f3f3f3;
 }
+header nav{
+	display:flex;
+	flex-direction: row;
+	list-style: none;
+}
+.barra_navegacion{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+header ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+header ul li a{
+	padding: 10px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+}
+.boton_menu{
+	gap: 8px;
+}
+.menu{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	padding:10px;
+}
+.container-logo-contacto{
+	padding-top: 38px;
+	padding-bottom: 38px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: center;
+}
+.contacto{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	gap: 20px;
+}
+.telefono{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 20px;
+}
+.text_container_telefono{
+	display:flex;
+	flex-direction: column;
+}
+
+/* ANIMACIONES DEL HEADER*/
+#telefono_icon{
+	z-index: 1;
+	position: relative;
+    left: 1115px;
+	
+}
+#mail_icon{
+	z-index: 1;
+	position: relative;
+    left: 863px;
+}
+#ubicacion_icon{
+	z-index: 1;
+	position: relative;
+    left: 532px;
+}
+
+.text_container_mail{
+	visibility: hidden;
+	z-index: 1;
+}
+.text_container_telefono{
+  	visibility: hidden;
+	z-index: 1;
+}
+.text_container_ubicacion{
+	visibility: hidden;
+	z-index: 1;
+}
+.mail{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 20px;
+}
+.text_container_mail{
+	display: flex;
+	flex-direction: column;
+}
+.ubicacion{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 20px;
+}
+.text_container_ubicacion{
+	display: flex;
+	flex-direction: column;
+}
+
+header p, a{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 139.2%;
+	text-align: right;
+	color: #023069;
+}
 
 /*MAIN*/
 main{
 	background-color: #fafafa;
 	width: 100%;
 	height: 1295px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bannerindex{
+	width: 100%;
+	height: auto;
+}
+.contenido_atenciones{
+	margin: 50px;
+	width: 60%;
 }
 
 h2{
@@ -31,6 +164,56 @@ h2{
 	line-height: 31px;
 	color: #1F518F;
 }
+main h2{
+	width: 60%;
+	border-bottom: 2px solid #E5E5E5;
+}
+.whatsapp{
+	position: absolute;
+	left: 1726px;
+	top: 1393px;
+}
+
+/*BOTONES DEL INDEX*/
+.button_container{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button_container a{
+	width: 191px;
+	height: 147px;
+	border-radius: 15px;
+	border-color: #FFFFFF;
+	box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+	color: rgba(0, 0, 0, 0.25);
+	padding: 10px;
+	margin: 10px;
+	flex-shrink: 0;
+	text-decoration: none;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button_container a:hover{
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+ 
+
+.button_container p{
+	font-family: 'Inter';
+	font-style: sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 31px;
+	color: #1F518F;
+	display: flex;
+    justify-content: center;
+}
+
+
 
 #menu{
 	display:flex;
