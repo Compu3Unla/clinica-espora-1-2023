@@ -37,7 +37,6 @@ h2{
 	flex-direction: column;
 }
 	/*MAIN SERVICIOS.HTML*/
-
 .cajatitulo{
 	border-radius: 35px 35px 0px 35px;
 	background-color:#D9D9D9;
@@ -81,16 +80,13 @@ summary{
 	font-weight:600;
 }
 
-
-
 .caja-contenido li{
 	padding:1px;
 	list-style:circle;
-	
 }
 
 	/*MAIN FORMULARIO.HTML*/
-h3 {
+h1 {
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
@@ -102,6 +98,7 @@ form {
 	width:100%;
 	height:auto;
 	border: 1px solid;
+	border-color: #000000;
   border-color: #000000;
 	display: flex;
 	flex-wrap: wrap;
@@ -117,8 +114,10 @@ input {
 	background-color: #ddd;
 	margin-bottom: 5px;
 }
-
-
+.contenido-formulario {
+	margin: 50px;
+	width: 60%;
+}
 
 /*FOOTER*/
 footer{
