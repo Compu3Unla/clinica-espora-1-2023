@@ -24,16 +24,16 @@ header nav{
 	width: 100%;
 	height: 54px;
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 	align-items: center;
-    padding: 0px 106px 0px 20px;
+  padding: 0px 106px 0px 20px;
 	border-top: 1px solid rgba(0, 0, 0, 0.25);
 }
 header ul{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 header ul li{
 	padding: 10px;
@@ -67,21 +67,21 @@ header a{
 	padding-left: 30px;
 	padding-right: 30px;
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 	align-items: center;
 }
 .contacto{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 	gap: 20px;
 }
 .telefono{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 	gap: 20px;
 	align-items: center;
 }
@@ -90,22 +90,22 @@ header a{
 	flex-direction: column;
 }
 
-/* ANIMACIONES DEL HEADER*/
+/* ANIMACIONES DEL HEADER*/ 
 #telefono_icon{
 	z-index: 1;
 	position: relative;
-    left: 1115px;
+  left: 1115px;
 	
 }
 #mail_icon{
 	z-index: 1;
 	position: relative;
-    left: 863px;
+  left: 863px;
 }
 #ubicacion_icon{
 	z-index: 1;
 	position: relative;
-    left: 532px;
+  left: 532px;
 }
 
 .text_container_mail{
@@ -113,7 +113,7 @@ header a{
 	z-index: 1;
 }
 .text_container_telefono{
-  	visibility: hidden;
+  visibility: hidden;
 	z-index: 1;
 }
 .text_container_ubicacion{
@@ -122,8 +122,8 @@ header a{
 }
 .mail{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 	gap: 20px;
 	align-items: center;
 }
@@ -133,8 +133,8 @@ header a{
 }
 .ubicacion{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 	gap: 20px;
 	align-items: center;
 }
@@ -159,8 +159,8 @@ main{
 	width: 100%;
 	height: 1295px;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .bannerindex{
 	width: 100%;
@@ -192,8 +192,8 @@ main h2{
 /*BOTONES DEL INDEX*/
 .button_container{
 	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .button_container a{
@@ -208,9 +208,9 @@ main h2{
 	flex-shrink: 0;
 	text-decoration: none;
 	display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .button_container a:hover{
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
@@ -322,49 +322,62 @@ input {
 /*FOOTER*/
 footer{
 	background-color: #1F518F;
-<<<<<<< HEAD
 	width: 100%;
 	height: 446px;
 	padding: 36px 101px;
 }
 .footer_container{
 	display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 .footer_telefono{
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px
 }
 .footer_mail{
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px
 }
 .footer_ubicacion{
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px
 }
 .footer_cont_contacto{
 	display: flex;
-    flex-direction: column;
-    gap: 25px;
+  flex-direction: column;
+  gap: 25px;
 }
 .footer_cont_navegacion{
 	display: flex;
-    flex-direction: column;
-    gap: 25px;
+  flex-direction: column;
+  gap: 25px;
+	font-family: "inter" "sans serif";
+	color:#FFFFFF;
+	padding-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	widht:100%;
+	height:446px;
 }
+.contenidofooter{
+	display:flex;
+	flex-direction: row;
+}
+
+
 
 h3{
 	font-family: 'Inter';
@@ -379,16 +392,12 @@ footer p, a, li{
 	color: #ffffff;
 	font-size: 20px;
 	line-height: 35px;
-=======
-	font-family: "inter" "sans serif";
-	color:#FFFFFF;
 	padding-top: 40px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	widht:100%;
 	height:446px;
->>>>>>> origin/main
 }
 .contenidofooter{
 	display:flex;
