@@ -75,7 +75,7 @@ header a{
 	display: flex;
   	flex-direction: row;
   	justify-content: space-between;
- 	 align-items: center;
+ 	align-items: center;
 	gap: 20px;
 }
 .telefono{
@@ -90,7 +90,7 @@ header a{
 	flex-direction: column;
 }
 
-/* ANIMACIONES DEL HEADER*/ 
+/* ANIMACIONES DEL HEADER*/ /*TODO ESTO NO VA PORQUE SE HACE CON JAVA, HAY QUE BUSCAR OTRA FORMA :( */
 #telefono_icon{
 	z-index: 1;
 	position: relative;
@@ -174,13 +174,14 @@ h2{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 600;
-	font-size: 19px;
+	font-size: 26px;
 	line-height: 31px;
 	color: #1F518F;
 }
 main h2{
 	width: 60%;
 	border-bottom: 2px solid #E5E5E5;
+	padding-bottom: 10px;
 }
 .whatsapp{
 	position: absolute;
@@ -284,44 +285,72 @@ summary{
 }
 
 	/*MAIN FORMULARIO.HTML*/
-h1 {
+.contenido-formulario p{
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 31px;
-	color: #1F518F
+	color: #000000;
+	font-size: 20px;
+	line-height: 35px;
+	padding-top: 30px;
+}
+.contenido-formulario{
+	margin: 50px;
+	width: 45%;
+}
+.contenido-formulario label{
+	font-family: 'Inter';
+	font-style: normal;
+	color: #000000;
+	font-size: 20px;
 }
 form {
 	width:100%;
 	height:auto;
-	border: 1px solid;
-	border-color: #000000;
 	display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: flex-start;
 }
 form div {
 	width: 50%;
 	height: auto;
-	padding: 20px;
+	padding-top: 43px;
 }
-input {
+.formulario_labels input{
 	width: 100%;
 	height: 25px;
-	background-color: #ddd;
-	margin-bottom: 5px;
+	border-radius: 10px;
+	background: #D9D9D9;
+	box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.25) inset;
+	margin-bottom: 30px;
+    margin-top: 10px;
 }
-.contenido-formulario {
-	margin: 50px;
-	width: 60%;
+.formulario_boton{
+	width: 238px;
+	height: 46px;
+	background-color: #3F6B25;
+	border-radius: 10px;
+	color: #FFF;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	margin-top: 32px;
 }
-
+.formulario_boton:hover{
+	background-color: #6AB33E;
+}
 /*FOOTER*/
 footer{
 	background-color: #1F518F;
 	max-width: 1920px;
 	height: 446px;
 	padding: 36px 101px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .footer_container{
 	display: flex;
@@ -334,6 +363,7 @@ footer{
 	display: flex;
     gap: 20px;
     align-items: center;
+	padding-bottom: 25px;
 }
 .footer_mail{
 	display: flex;
@@ -341,6 +371,7 @@ footer{
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
+	padding-bottom: 25px;
 }
 .footer_ubicacion{
 	display: flex;
@@ -353,19 +384,26 @@ footer{
 	display: flex;
     flex-direction: column;
     gap: 25px;
+	width: 30%;
 }
 .footer_cont_navegacion{
 	display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: flex-start;
+	width: 30%;
+    padding-left: 30px;
+    border-right: 2px solid rgba(255, 255, 255, 0.50);
+    border-left: 2px solid rgba(255, 255, 255, 0.50);
 }
 .footer_ul_container{
 	display: flex;
     flex-direction: row;
     gap: 54px;
 }
-
+.footer_ul_container ul{
+	padding-bottom: 15px;
+}
 
 
 h3{
