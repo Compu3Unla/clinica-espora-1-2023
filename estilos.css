@@ -8,8 +8,10 @@
 	margin: 0;
 	list-style: none;
 }
-
-/*HEADER*/
+a{
+	text-decoration: none;
+}
+/*-----------------------HEADER------------------------*/
 header{
 	max-width: 1920px;
 	height: 205px;
@@ -62,10 +64,7 @@ header a{
 	padding:10px;
 }
 .container-logo-contacto{
-	padding-top: 38px;
-	padding-bottom: 38px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 38px 30px 38px 30px;
 	display: flex;
   	flex-direction: row;
   	justify-content: space-between;
@@ -90,7 +89,7 @@ header a{
 	flex-direction: column;
 }
 
-/* ANIMACIONES DEL HEADER*/ /*TODO ESTO NO VA PORQUE SE HACE CON JAVA, HAY QUE BUSCAR OTRA FORMA :( */
+/* -------------------------ANIMACIONES DEL HEADER-------------------------*/ /*TODO ESTO NO VA PORQUE SE HACE CON JAVA, HAY QUE BUSCAR OTRA FORMA :( */
 #telefono_icon{
 	z-index: 1;
 	position: relative;
@@ -153,7 +152,7 @@ header p, a{
 	color: #023069;
 }
 
-/*MAIN*/
+/*-------------------------MAIN INDEX-------------------------*/
 main{
 	background-color: #fafafa;
 	width: 100%;
@@ -189,7 +188,7 @@ main h2{
 	top: 1393px;
 }
 
-/*BOTONES DEL INDEX*/
+/*-------------------------BOTONES DEL INDEX-------------------------*/
 .button_container{
 	display: flex;
   	flex-direction: row;
@@ -237,7 +236,7 @@ main h2{
 	display:flex;
 	flex-direction: column;
 }
-	/*MAIN SERVICIOS.HTML*/
+	/*-------------------------MAIN SERVICIOS.HTML-------------------------*/
 .cajatitulo{
 	border-radius: 35px 35px 0px 35px;
 	background-color:#D9D9D9;
@@ -284,7 +283,7 @@ summary{
 	list-style:circle;
 }
 
-	/*MAIN FORMULARIO.HTML*/
+	/*-------------------------MAIN FORMULARIO.HTML-------------------------*/
 .contenido-formulario p{
 	font-family: 'Inter';
 	font-style: normal;
@@ -323,8 +322,7 @@ form div {
 	border-radius: 10px;
 	background: #D9D9D9;
 	box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.25) inset;
-	margin-bottom: 30px;
-    margin-top: 10px;
+	margin: 10px 0px 30px 0px;
 }
 .formulario_boton{
 	width: 238px;
@@ -342,7 +340,7 @@ form div {
 .formulario_boton:hover{
 	background-color: #6AB33E;
 }
-/*FOOTER*/
+/*-------------------------FOOTER-------------------------*/
 footer{
 	background-color: #1F518F;
 	max-width: 1920px;
@@ -422,7 +420,7 @@ footer p, a, li{
 }
 
 
-
+/*-------------------------TAMAÑO PARA CELULAR-------------------------*/
 @media screen and (max-width: 360px ) { /*una vez que tengamos todos los html vemos como armamos la vista para celular*/
 	
 
