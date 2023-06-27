@@ -90,7 +90,7 @@ header a{
 }
 
 /* -------------------------ANIMACIONES DEL HEADER-------------------------*/ /*TODO ESTO NO VA PORQUE SE HACE CON JAVA, HAY QUE BUSCAR OTRA FORMA :( */
-#telefono_icon{
+/*#telefono_icon{
 	z-index: 1;
 	position: relative;
   	left: 1115px;
@@ -105,20 +105,20 @@ header a{
 	z-index: 1;
 	position: relative;
   	left: 532px;
-}
+}*/
 
-.text_container_mail{
-	visibility: hidden;
+/*.text_container_mail{
+	visibility: visible;
 	z-index: 1;
 }
 .text_container_telefono{
-  	visibility: hidden;
+  	visibility: visible;
 	z-index: 1;
 }
 .text_container_ubicacion{
-	visibility: hidden;
+	visibility: visible;
 	z-index: 1;
-}
+}*/
 .mail{
 	display: flex;
  	flex-direction: row;
@@ -142,7 +142,16 @@ header a{
 	flex-direction: column;
 }
 
-header p, a{
+header p{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 139.2%;
+	text-align: right;
+	color: #023069;
+}
+header a{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 600;
@@ -182,10 +191,11 @@ main h2{
 	border-bottom: 2px solid #E5E5E5;
 	padding-bottom: 10px;
 }
-.whatsapp{
-	position: absolute;
-	left: 1726px;
-	top: 1393px;
+.button_whatsapp{
+	position: fixed;
+	z-index: 20px;
+	bottom: 10%;
+	right: 10%;
 }
 
 /*-------------------------BOTONES DEL INDEX-------------------------*/
@@ -340,6 +350,8 @@ form div {
 .formulario_boton:hover{
 	background-color: #6AB33E;
 }
+/*-------------------------MAIN INFRAESTRUCTURA.HTML-------------------------*/
+
 /*-------------------------FOOTER-------------------------*/
 footer{
 	background-color: #1F518F;
