@@ -8,12 +8,53 @@
 
 <body>
 	<header>
+		<div class="container-logo-contacto">
+			<img src="img/header/_svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
+				<div class="telefono">
+					<img src="img/header/_a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">	
+					<div class="text_container_telefono">
+						<p> Contactanos al teléfono </p>
+						<p style="font-size: 24px">(011) 5034-6000</p>
+					</div>
+				</div>
+				<div class="mail">
+					<img src="img/header/_a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
+					<div class="text_container_mail">
+						<p>Envianos tus consultas a:</p>
+						<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
+					</div>
+				</div>
+				<div class="ubicacion">
+					<img src="img/header/_a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
+					<div class="text_container_ubicacion">
+						<p>Nuestra dirección:</p>
+						<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="barra_navegacion">
+			<div class="boton_menu">
+				<img src="img/header/_svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
+				<a class="menu">Menu</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a>Home</a></li>
+					<li><a>Quienes Somos</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
+					<li><a>Como llegar</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<img src="img/main/banner_servicios.jpg" width="1506px" height="386px" alt="imagen servicios"/> 
+		<img class="imgservicios" src="img/main/banner_servicios.jpg" width="1920px" height="490px" alt="imagen servicios"/> 
 		<section id="menu">
 				<details>
 					<summary class="cajatitulo">
+						
 						<h2 class="tituloservicio">SERVICIO DE DIAGNÓSTICO POR IMÁGENES </h2>
 					</summary>
 					<div class="caja-contenido">	
@@ -107,26 +148,27 @@
 		</section>
 	</main>
 	<footer>
-		
-			<section class="contenidofooter">
+		<div class="footer_container">
+			<div class="footer_cont_contacto">
 				<h3>Contacto</h3>
 				<div>
-					<div>
+					<div class="footer_telefono">
 						<img src="img/footer/_svg_telefono.svg" width= "20px" height="20px" alt="icono telefono">
 						<p>(011) 5034-6000</p>
 					</div>
-					<div>
+					<div class="footer_mail">
 						<img src="img/footer/_svg_mail.svg" width="20px" height="16px" alt="icono mail">
 						<a>info@clinicaespora.com.ar</a>
 					</div>
-					<div>
+					<div class="footer_ubicacion">
 						<img src="img/footer/_svg_ubicacion.svg" width="20px" height="24.62px" alt="icono ubicacion">
 						<p>Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</p>
 					</div>
 				</div>
-				<div class="columnaizquierda">
-					<h3>Navegación</h3>
-				
+			</div>
+			<div class="footer_cont_navegacion">
+				<h3>Navegación</h3>
+				<div class="footer_ul_container">
 					<ul>
 						<li>Servicios</li>
 						<li>Infraestructura</li>
@@ -136,8 +178,6 @@
 						<li>Horarios de visita</li>
 						<li>Cuerpo médico</li>
 					</ul>
-				</div>
-				<div>
 					<ul>
 						<li>Residencias</li>
 						<li>Como llegar</li>
@@ -146,12 +186,11 @@
 						<li>Solicitar promotor</li>
 						<li>Resultados lab</li>
 						<li>Prestadores</li>
-				</ul>
+					</ul>
 				</div>
-				
-			
-				<img src="img/footer/_svg_logo_byn.svg" width="282.44px" height="137px" alt="logo clinica espora en blanco y negro">
-			</section>
+			</div>
+			<img src="img/footer/_svg_logo_byn.svg" width="282.44px" height="137px" alt="logo clinica espora en blanco y negro">
+		</div>
 	</footer>
 
 </body>
