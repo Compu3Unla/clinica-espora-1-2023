@@ -351,7 +351,36 @@ form div {
 	background-color: #6AB33E;
 }
 /*-------------------------MAIN INFRAESTRUCTURA.HTML-------------------------*/
-
+.list_infrastructura li{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'Inter';
+	line-height: 35px;
+}
+#infraestructura_container{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'Inter';
+	line-height: 35px;
+}
+.sobre_nosotros{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'Inter';
+	line-height: 35px;
+}
+#infraestructura_container{
+	margin: 50px;
+	width: 60%;
+}
+#galeria_container{
+	margin: 50px;
+	width: 60%;
+}
+#sobre_nosotros_container{
+	margin: 50px;
+	width: 60%;
+}
 /*-------------------------FOOTER-------------------------*/
 footer{
 	background-color: #1F518F;
@@ -371,36 +400,36 @@ footer{
 
 .footer_telefono{
 	display: flex;
-    gap: 20px;
-    align-items: center;
+	gap: 20px;
+	align-items: center;
 	padding-bottom: 25px;
 }
 .footer_mail{
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
 	padding-bottom: 25px;
 }
 .footer_ubicacion{
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
 }
 .footer_cont_contacto{
 	display: flex;
-    flex-direction: column;
-    gap: 25px;
+	flex-direction: column;
+	gap: 25px;
 	width: 30%;
 }
 .footer_cont_navegacion{
 	display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: flex-start;
+	flex-direction: column;
+	gap: 25px;
+	align-items: flex-start;
 	width: 30%;
     padding-left: 30px;
     border-right: 2px solid rgba(255, 255, 255, 0.50);
