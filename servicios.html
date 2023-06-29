@@ -9,24 +9,24 @@
 <body>
 	<header>
 		<div class="container-logo-contacto">
-			<img src="img/header/_svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<img src="img/header/svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
 			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
 				<div class="telefono">
-					<img src="img/header/_a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">	
+					<img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">
 					<div class="text_container_telefono">
 						<p> Contactanos al teléfono </p>
 						<p style="font-size: 24px">(011) 5034-6000</p>
 					</div>
 				</div>
 				<div class="mail">
-					<img src="img/header/_a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
+					<img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
 					<div class="text_container_mail">
 						<p>Envianos tus consultas a:</p>
 						<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
 					</div>
 				</div>
 				<div class="ubicacion">
-					<img src="img/header/_a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
+					<img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
 					<div class="text_container_ubicacion">
 						<p>Nuestra dirección:</p>
 						<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
@@ -35,10 +35,21 @@
 			</div>
 		</div>
 		<div class="barra_navegacion">
+			<input type= "checkbox" id= "check">
+			<label for="check" class="icono-menu">
 			<div class="boton_menu">
-				<img src="img/header/_svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
+				<img src="img/header/svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
 				<a class="menu">Menu</a>
 			</div>
+			</label>
+			<nav>
+				<ul class="nav-secciones">
+					<li>
+						<a href="#" title="servicios">SERVICIOS</a>
+					</li>
+				
+				</ul>
+			</nav>
 			<nav>
 				<ul>
 					<li><a>Home</a></li>
