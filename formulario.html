@@ -2,19 +2,58 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<title>Solicitar Promotor</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
 	<header>
+		<div class="container-logo-contacto">
+			<img src="img/header/svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
+				<div class="telefono">
+					<img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">	
+					<div class="text_container_telefono">
+						<p> Contactanos al teléfono </p>
+						<p style="font-size: 24px">(011) 5034-6000</p>
+					</div>
+				</div>
+				<div class="mail">
+					<img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
+					<div class="text_container_mail">
+						<p>Envianos tus consultas a:</p>
+						<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
+					</div>
+				</div>
+				<div class="ubicacion">
+					<img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
+					<div class="text_container_ubicacion">
+						<p>Nuestra dirección:</p>
+						<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="barra_navegacion">
+			<div class="boton_menu">
+				<img src="img/header/svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
+				<a href="#" class="menu">Menu</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Quienes Somos</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Como llegar</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
 		<div class="contenido-formulario"> 
-			<h1>SOLICITAR PROMOTOR</h1>
+			<h2>SOLICITAR PROMOTOR</h2>
 			<p>Si deseas asociarte a la prepaga de Clínica Espora, <b>Espora Salud</b>, llená el siguiente formulario. Tus datos serán envíados a nuestros representantes y en poco tiempo te contactará uno de nuestos promotores.</p>
 			<form method="post" action="?=subject: Solicitar prepaga Espora Salud" target="_blank" enctypes="text/plain">
-			<div>
+			<div class="formulario_labels">
 				<label for="E-mail">* E-mail</label>
 				<input type="E-mail" name="E-mail" id="E-mail" required>
 				<label for="Nombre completo">* Nombre</label>
@@ -25,12 +64,55 @@
 				<input type="text" name="Teléfonno" id="Teléfono" maxlength="20" placeholder="(cód. área) 00000000000">
 				<label for="Horario de contacto">* Horario de contacto</label>
 				<input type="text" name="Horario de contacto" id="Horario de contacto" maxlength="50" placeholder="Horario de contacto" required>
-				<input type="Submit">
 			</div>
+				<input type="Submit" class="formulario_boton">
 	</form>
 	</div>
 </main>
 <footer>
+	<div class="footer_container">
+			<div class="footer_cont_contacto">
+				<h4>Contacto</h4>
+				<div>
+					<div class="footer_telefono">
+						<img src="img/footer/svg_telefono.svg" width= "20px" height="20px" alt="icono telefono">
+						<p>(011) 5034-6000</p>
+					</div>
+					<div class="footer_mail">
+						<img src="img/footer/svg_mail.svg" width="20px" height="16px" alt="icono mail">
+						<a>info@clinicaespora.com.ar</a>
+					</div>
+					<div class="footer_ubicacion">
+						<img src="img/footer/svg_ubicacion.svg" width="20px" height="24.62px" alt="icono ubicacion">
+						<p>Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer_cont_navegacion">
+				<h4>Navegación</h4>
+				<div class="footer_ul_container">
+					<ul>
+						<li><a href="#">Servicios</a></li>
+						<li><a href="#">Infraestructuras</a></li>
+						<li><a href="#">Especialidadess</a></li>
+						<li><a href="#">Obra Socials</a></li>
+						<li><a href="#">Servicio de guardiass</a></li>
+						<li><a href="#">Horarios de visitas</a></li>
+						<li><a href="#">Cuerpo médicos</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Residencias</a></li>
+						<li><a href="#">Como llegar</a></li>
+						<li><a href="#">Visualmedia</a></li>
+						<li><a href="#">Espora salud</a></li>
+						<li><a href="#">Solicitar promotor</a></li>
+						<li><a href="#">Resultados lab</a></li>
+						<li><a href="#">Prestadores</a></li>
+					</ul>
+				</div>
+			</div>
+			<img src="img/footer/svg_logo_byn.svg" width="282.44px" height="137px" alt="logo clinica espora en blanco y negro">
+		</div>
 </footer>
 </body>
 </html>
