@@ -36,6 +36,7 @@ header ul{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	gap: 20px;
 }
 header ul li{
 	padding: 10px;
@@ -44,6 +45,10 @@ header ul li{
 	font-weight: 500;
 	font-size: 14px;
 	color: #023069;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
 }
 header a{
 	padding: 10px;
@@ -53,6 +58,14 @@ header a{
 	font-size: 14px;
 	color: #023069;
 }
+.container-logo-contacto{
+	padding: 38px 30px 38px 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+/*--------------------------MENU HEADER--------------------------*/
 .boton_menu{
 	gap: 8px;
 }
@@ -63,192 +76,11 @@ header a{
 	font-size: 14px;
 	padding:10px;
 }
-.container-logo-contacto{
-	padding: 38px 30px 38px 30px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
+/* -------------------------ANIMACIONES DEL HEADER-------------------------*/ 
 .contacto{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
-
-	gap: 20px;
-}
-.telefono{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-}
-.text_container_telefono{
-	display:flex;
-	flex-direction: column;
-}
-
-/* -------------------------ANIMACIONES DEL HEADER-------------------------*/ /*TODO ESTO NO VA PORQUE SE HACE CON JAVA, HAY QUE BUSCAR OTRA FORMA :( */
-#telefono_icon{
-	z-index: 1;
-	position: relative;
-	left: 1115px;
-	
-}
-#mail_icon{
-	z-index: 1;
-	position: relative;
-	left: 863px;
-}
-#ubicacion_icon{
-	z-index: 1;
-	position: relative;
-	left: 532px;
-}
-
-.text_container_mail{
-	visibility: hidden;
-	z-index: 1;
-}
-.text_container_telefono{
-	visibility: hidden;
-	z-index: 1;
-}
-.text_container_ubicacion{
-	visibility: hidden;
-	z-index: 1;
-}
-.mail{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-}
-.text_container_mail{
-	display: flex;
-	flex-direction: column;
-}
-.ubicacion{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-}
-.text_container_ubicacion{
-	display: flex;
-	flex-direction: column;
-}
-
-header p, a{
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 139.2%;
-	text-align: right;
-	color: #023069;
-}
-.menu{
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	padding:10px;
-}
-.container-logo-contacto{
-	padding-top: 38px;
-	padding-bottom: 38px;
-	padding-left: 30px;
-	padding-right: 30px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-}
-.contacto{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	 align-items: center;
-	gap: 20px;
-}
-.telefono{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-}
-.text_container_telefono{
-	display:flex;
-	flex-direction: column;
-}
-
-/* ANIMACIONES DEL HEADER*/ 
-#telefono_icon{
-	z-index: 1;
-	position: relative;
-	left: 1115px;
-	
-}
-#mail_icon{
-	z-index: 1;
-	position: relative;
-	left: 863px;
-}
-#ubicacion_icon{
-	z-index: 1;
-	position: relative;
-	left: 532px;
-}
-
-.text_container_mail{
-	visibility: hidden;
-	z-index: 1;
-}
-.text_container_telefono{
-	visibility: hidden;
-	z-index: 1;
-}
-.text_container_ubicacion{
-	visibility: hidden;
-	z-index: 1;
-}
-.mail{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-}
-.text_container_mail{
-	display: flex;
-	flex-direction: column;
-}
-.ubicacion{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 20px;
-	align-items: center;
-}
-.text_container_ubicacion{
-	display: flex;
-	flex-direction: column;
-}
-
-header p, a{
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 139.2%;
-	text-align: right;
-	color: #023069;
 }
 
 /*-------------------------MAIN INDEX-------------------------*/
@@ -288,10 +120,12 @@ main h2{
 	border-bottom: 2px solid #E5E5E5;
 	padding-bottom: 10px;
 }
-.whatsapp{
-	position: absolute;
-	left: 1726px;
-	top: 1393px;
+/*-------------------------BOTON WHATSAPP---------------*/
+.button_whatsapp{
+	position: fixed;
+	z-index: 20px;
+	bottom: 10%;
+	right: 10%;
 }
 
 /*-------------------------BOTONES DEL INDEX-------------------------*/
@@ -467,6 +301,40 @@ form div {
 .formulario_boton:hover{
 	background-color: #6AB33E;
 }
+/*-------------------------MAIN INFRAESTRUCTURA.HTML-------------------------*/
+.list_infrastructura li{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'Inter';
+	line-height: 35px;
+}
+#infraestructura_container{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'Inter';
+	line-height: 35px;
+}
+.sobre_nosotros{
+	color: #000000;
+	font-size: 20px;
+	font-family: 'Inter';
+	line-height: 35px;
+}
+#infraestructura_container{
+	margin: 50px;
+	width: 60%;
+}
+#galeria_container{
+	margin: 50px;
+	width: 60%;
+}
+#sobre_nosotros_container{
+	margin: 50px;
+	width: 60%;
+}
+.video{
+	margin-top: 5%;
+}
 /*-------------------------FOOTER-------------------------*/
 footer{
 	background-color: #1F518F;
@@ -486,16 +354,16 @@ footer{
 
 .footer_telefono{
 	display: flex;
-    gap: 20px;
-    align-items: center;
+  gap: 20px;
+  align-items: center;
 	padding-bottom: 25px; /*revisar*/
 }
 .footer_mail{
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 	padding-bottom: 25px; /*revisar*/
 }
 .footer_ubicacion{
@@ -513,9 +381,9 @@ footer{
 }
 .footer_cont_navegacion{
 	display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: flex-start;
+	flex-direction: column;
+	gap: 25px;
+	align-items: flex-start;
 	width: 30%;
     padding-left: 30px;
     border-right: 2px solid rgba(255, 255, 255, 0.50);
@@ -566,14 +434,14 @@ footer{
 	gap: 54px;
 }
 
-h3{
+h4{
 	font-family: 'Inter';
 	font-style: normal;
 	color: #ffffff;
 	font-size: 26px;
 	font-weight: 600;
 }
-footer p, a, li{
+footer p, footer a, footer li{
 	font-family: 'Inter';
 	font-style: normal;
 	color: #ffffff;
