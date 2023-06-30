@@ -377,7 +377,6 @@ form div {
 .video{
 	margin-top: 5%;
 }
-
 /*-----------------ACÁ VA EL CARRUSEL--------------*/
 #galeria_container{
 	margin: 50px;
@@ -414,7 +413,14 @@ form div {
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
 	}
 
-
+/*-------MAIN GUADIAS.HTML-----*/
+.contnedor-guardias{
+	width: 60%;
+	margin: 50px;
+}
+.contenedor-guardias p{
+	margin: 20px 0px;
+}
 /*-------------------------FOOTER-------------------------*/
 footer{
 	background-color: #1F518F;
