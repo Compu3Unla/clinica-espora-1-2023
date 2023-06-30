@@ -9,24 +9,24 @@
 <body>
 	<header>
 		<div class="container-logo-contacto">
-			<img src="img/header/_svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<img src="img/header/svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
 			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
 				<div class="telefono">
-					<img src="img/header/_a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">	
+					<img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">
 					<div class="text_container_telefono">
 						<p> Contactanos al teléfono </p>
 						<p style="font-size: 24px">(011) 5034-6000</p>
 					</div>
 				</div>
 				<div class="mail">
-					<img src="img/header/_a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
+					<img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
 					<div class="text_container_mail">
 						<p>Envianos tus consultas a:</p>
 						<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
 					</div>
 				</div>
 				<div class="ubicacion">
-					<img src="img/header/_a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
+					<img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
 					<div class="text_container_ubicacion">
 						<p>Nuestra dirección:</p>
 						<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
@@ -35,10 +35,21 @@
 			</div>
 		</div>
 		<div class="barra_navegacion">
+			<input type= "checkbox" id= "check">
+			<label for="check" class="icono-menu">
 			<div class="boton_menu">
-				<img src="img/header/_svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
+				<img src="img/header/svg_menuhamburguesa.svg" width= "23px" height= "17px" alt="icono menu hamburguesa">
 				<a class="menu">Menu</a>
 			</div>
+			</label>
+			<nav>
+				<ul class="nav-secciones">
+					<li>
+						<a href="#" title="servicios">SERVICIOS</a>
+					</li>
+				
+				</ul>
+			</nav>
 			<nav>
 				<ul>
 					<li><a>Home</a></li>
@@ -58,25 +69,25 @@
 						<h2 class="tituloservicio">SERVICIO DE DIAGNÓSTICO POR IMÁGENES </h2>
 					</summary>
 					<div class="caja-contenido">	
-					<p class=" bold">Radiología:</p><p> Atención sin turno previo y guardia permanente de lunes a domingos las 24 hs.</p> 
-					<p class="bold">Ecografías:</p><p> Atención con turno previo solicitado telefónicamente de lunes a viernes de 8 a 18 hs.</p>
-					<h3 class="subtitulo">ESTUDIOS</h3>
-					<ul>
-						<li>Ecodoppler Fetales</li>
-						<li>Ecodoppler Periféricos</li>
-						<li>Ecodoppler Cardíaco Adultos y Niños</li>
-						<li>Ecodoppler de vasos de cuello</li>
-						<li>Ecografías transvaginales, caderas, partes blandas, abdominales, renales, testicular, vesico prostática, mamarias, tiroidea.</li>
-						<li>Ecocardiogramas</li>
-						<li>Ecocardiograma con estrés ejercicio</li>
-						<li>Ecocardiograma con estrés farmacológico (Dobutamina/Dipiridamol)</li>
-						<li>Doppler Color Arterial de miembros inferiores</li>
-						<li>Doppler Color Venoso de miembros inferiores</li>
-						<li>Doppler Color Arterial de miembros superiores</li>
-						<li>Doppler Color Venoso de miembros superiores</li>
-						<li>Doppler Color de Aorta abdominal y arterias ilíacas</li>
-						<li>Ergometrías de 12 derivaciones</li>
-					</ul>	
+						<p class=" bold">Radiología:</p><p> Atención sin turno previo y guardia permanente de lunes a domingos las 24 hs.</p> 
+						<p class="bold">Ecografías:</p><p> Atención con turno previo solicitado telefónicamente de lunes a viernes de 8 a 18 hs.</p>
+						<h3 class="subtitulo">ESTUDIOS</h3>
+						<ul>
+							<li>Ecodoppler Fetales</li>
+							<li>Ecodoppler Periféricos</li>
+							<li>Ecodoppler Cardíaco Adultos y Niños</li>
+							<li>Ecodoppler de vasos de cuello</li>
+							<li>Ecografías transvaginales, caderas, partes blandas, abdominales, renales, testicular, vesico prostática, mamarias, tiroidea.</li>
+							<li>Ecocardiogramas</li>
+							<li>Ecocardiograma con estrés ejercicio</li>
+							<li>Ecocardiograma con estrés farmacológico (Dobutamina/Dipiridamol)</li>
+							<li>Doppler Color Arterial de miembros inferiores</li>
+							<li>Doppler Color Venoso de miembros inferiores</li>
+							<li>Doppler Color Arterial de miembros superiores</li>
+							<li>Doppler Color Venoso de miembros superiores</li>
+							<li>Doppler Color de Aorta abdominal y arterias ilíacas</li>
+							<li>Ergometrías de 12 derivaciones</li>
+						</ul>	
 					</div>
 				</details>
 		
@@ -88,7 +99,7 @@
 					<div class="caja-contenido">
 						<h3 class="subtitulo">CARDIOANGIOLOGÍA INTERVENCIONISTA Y TERAPÉUTICA ENDOVASCULA</h3>
 						<p>El área de Hemodinamia  de Clínica Espora es un servicio de Alta Complejidad especializado en el diagnóstico y tratamiento endovascular de las enfermedades cardiovasculares.</p>
-					<p>El Staff médico está conformado por Cardiólogos Intervencionistas de vasta experiencia profesional.</p>
+						<p>El Staff médico está conformado por Cardiólogos Intervencionistas de vasta experiencia profesional.</p>
 					<ul>
 						<li>Dr. Alejandro García Escudero</li>
 						<li>Dr. Pablo Olmedo</li>
@@ -153,15 +164,15 @@
 				<h4>Contacto</h4>
 				<div>
 					<div class="footer_telefono">
-						<img src="img/footer/_svg_telefono.svg" width= "20px" height="20px" alt="icono telefono">
+						<img src="img/footer/svg_telefono.svg" width= "20px" height="20px" alt="icono telefono">
 						<p>(011) 5034-6000</p>
 					</div>
 					<div class="footer_mail">
-						<img src="img/footer/_svg_mail.svg" width="20px" height="16px" alt="icono mail">
+						<img src="img/footer/svg_mail.svg" width="20px" height="16px" alt="icono mail">
 						<a>info@clinicaespora.com.ar</a>
 					</div>
 					<div class="footer_ubicacion">
-						<img src="img/footer/_svg_ubicacion.svg" width="20px" height="24.62px" alt="icono ubicacion">
+						<img src="img/footer/svg_ubicacion.svg" width="20px" height="24.62px" alt="icono ubicacion">
 						<p>Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</p>
 					</div>
 				</div>
@@ -189,7 +200,7 @@
 					</ul>
 				</div>
 			</div>
-			<img src="img/footer/_svg_logo_byn.svg" width="282.44px" height="137px" alt="logo clinica espora en blanco y negro">
+			<img src="img/footer/svg_logo_byn.svg" width="282.44px" height="137px" alt="logo clinica espora en blanco y negro">
 		</div>
 	</footer>
 

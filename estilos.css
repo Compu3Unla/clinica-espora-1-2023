@@ -244,13 +244,14 @@ main h2{
 #menu{
 	display:flex;
 	flex-direction: column;
+	padding-top: 40px;
 }
 
 	/*-------------------------MAIN SERVICIOS.HTML-------------------------*/
 .cajatitulo{
 	border-radius: 35px 35px 0px 35px;
 	background-color:#D9D9D9;
-	width:720px;
+	width:971px;
 	margin-bottom: 0px;
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
 } 
@@ -265,7 +266,7 @@ main h2{
 	font-size:13px;
 	background-color:#D9D9D9;
 	border-radius: 0px 0px 0px 35px; 
-	width: 668px;
+	width: 919px;
 	margin-left:20px;
 	padding:36px; 
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
@@ -312,10 +313,10 @@ form {
 	width:100%;
 	height:auto;
 	display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-end;
-    align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-end;
+	align-content: flex-start;
 }
 form div {
 	width: 50%;
@@ -376,11 +377,43 @@ form div {
 .video{
 	margin-top: 5%;
 }
+
 /*-----------------ACÁ VA EL CARRUSEL--------------*/
 #galeria_container{
 	margin: 50px;
 	width: 60%;
 }
+
+/*MAIN RESIDENCIAS.HTML*/
+#menu-residencias{
+	display:flex;
+	flex-direction: column;
+	padding-top: 40px;
+}
+.titulo-cajas{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: #1F518F;
+}
+.caja-titulo-residencias{
+	border-radius: 35px 35px 0px 35px;
+	background-color:#D9D9D9;
+	width:971px;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
+}
+	.caja-contenido-residencias{
+	font-size:13px;
+	background-color:#D9D9D9;
+	border-radius: 0px 0px 0px 35px; 
+	width: 919px;
+	margin-left:20px;
+	padding:36px; 
+	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
+	}
+
 
 /*-------------------------FOOTER-------------------------*/
 footer{
@@ -389,8 +422,8 @@ footer{
 	height: 446px;
 	padding: 36px 101px;
 	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-around;
 }
 .footer_container{
 	display: flex;
@@ -412,6 +445,7 @@ footer{
  	align-items: center;
  	gap: 20px;
 	padding-bottom: 25px; 
+
 }
 .footer_ubicacion{
 	display: flex;
@@ -422,8 +456,8 @@ footer{
 }
 .footer_cont_contacto{
 	display: flex;
- 	flex-direction: column;
- 	gap: 25px;
+	flex-direction: column;
+	gap: 25px;
 	width: 30%;
 }
 .footer_cont_navegacion{
@@ -432,9 +466,9 @@ footer{
 	gap: 25px;
 	align-items: flex-start;
 	width: 30%;
-    padding-left: 30px;
-    border-right: 2px solid rgba(255, 255, 255, 0.50);
-    border-left: 2px solid rgba(255, 255, 255, 0.50);
+	padding-left: 30px;
+	border-right: 2px solid rgba(255, 255, 255, 0.50);
+	border-left: 2px solid rgba(255, 255, 255, 0.50);
 }
 .footer_ul_container{
 	display: flex;
