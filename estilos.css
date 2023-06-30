@@ -14,7 +14,6 @@ a{
 /*-----------------------HEADER------------------------*/
 header{
 	max-width: 1920px;
-	height: 205px;
 	background-color: #f3f3f3;
 }
 header nav{
@@ -42,7 +41,7 @@ header ul li{
 	padding: 10px;
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 14px;
 	color: #023069;
 	display: flex;
@@ -54,7 +53,7 @@ header a{
 	padding: 10px;
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 14px;
 	color: #023069;
 }
@@ -65,6 +64,36 @@ header a{
 	justify-content: space-between;
 	align-items: center;
 }
+/*----------ACÁ ES DONDE EMPIEZA LA MAGIA NEGRA DE LOS ICONOS DEL HEADER-------------*/
+summary{
+	padding:10px;
+}
+.contacto summary{
+	position: relative;
+}
+.contacto details{
+	position: relative;
+	width: 80px;
+}
+
+.contacto #desplegable_telefono[open]{
+	width: 340px;
+}
+.contacto #desplegable_mail[open]{
+	width: 420px;
+}
+.contacto #desplegable_ubicacion[open]{
+	width: 660px;
+}
+.contacto .contacto_text_container{
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	font-family: 'Inter';
+	font-style: normal;
+	color: #1F518F;
+}
+/*------------------ACÁ TERMINA LA MAGIA NEGRA, PROCEDA CON EL RESTO DEL CSS-----------*/
 /*--------------------------MENU HEADER--------------------------*/
 .boton_menu{
 	gap: 8px;
@@ -72,16 +101,31 @@ header a{
 .menu{
 	font-family: 'Inter';
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 14px;
 	padding:10px;
 }
-/* -------------------------ANIMACIONES DEL HEADER-------------------------*/ 
 .contacto{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
+/* -------------------------ANIMACIONES DEL HEADER-------------------------*/ 
+#logo_espora{
+	position: relative;
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+	transform:translateX 40px;
+}
+@keyframes logo{
+	0%{transform:translateX(0px)}
+	50%{transform:translateX(40px)}
+	100%{transform:translateX(0px)}
+}
+
 
 /*-------------------------MAIN INDEX-------------------------*/
 main{
@@ -110,7 +154,7 @@ h2{
 	color: #1F518F;
 }
 .imgservicios{
-	widht:100%;
+	width:100%;
 	height: auto;
 }
 
@@ -126,6 +170,12 @@ main h2{
 	z-index: 20px;
 	bottom: 10%;
 	right: 10%;
+	padding: 20px;
+	border-radius: 50%;
+	heigth: auto;
+	width: auto;
+	background-color: #25D366;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
 }
 
 /*-------------------------BOTONES DEL INDEX-------------------------*/
@@ -201,7 +251,7 @@ main h2{
 .cajatitulo{
 	border-radius: 35px 35px 0px 35px;
 	background-color:#D9D9D9;
-	width:720px;
+	width:971px;
 	margin-bottom: 0px;
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
 } 
@@ -212,16 +262,11 @@ main h2{
 	
 }
 
-summary{
-	padding:10px;
-	margin:20px;
-}
-
 .caja-contenido{
 	font-size:13px;
 	background-color:#D9D9D9;
 	border-radius: 0px 0px 0px 35px; 
-	width: 668px;
+	width: 919px;
 	margin-left:20px;
 	padding:36px; 
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
@@ -268,10 +313,10 @@ form {
 	width:100%;
 	height:auto;
 	display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: flex-end;
-    align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-end;
+	align-content: flex-start;
 }
 form div {
 	width: 50%;
@@ -325,10 +370,6 @@ form div {
 	margin: 50px;
 	width: 60%;
 }
-#galeria_container{
-	margin: 50px;
-	width: 60%;
-}
 #sobre_nosotros_container{
 	margin: 50px;
 	width: 60%;
@@ -336,6 +377,42 @@ form div {
 .video{
 	margin-top: 5%;
 }
+/*-----------------ACÁ VA EL CARRUSEL--------------*/
+#galeria_container{
+	margin: 50px;
+	width: 60%;
+}
+
+/*MAIN RESIDENCIAS.HTML*/
+#menu-residencias{
+	display:flex;
+	flex-direction: column;
+	padding-top: 40px;
+}
+.titulo-cajas{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	color: #1F518F;
+}
+.caja-titulo-residencias{
+	border-radius: 35px 35px 0px 35px;
+	background-color:#D9D9D9;
+	width:971px;
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
+}
+	.caja-contenido-residencias{
+	font-size:13px;
+	background-color:#D9D9D9;
+	border-radius: 0px 0px 0px 35px; 
+	width: 919px;
+	margin-left:20px;
+	padding:36px; 
+	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
+	}
+
 /*-------MAIN GUADIAS.HTML-----*/
 .contnedor-guardias{
 	width: 60%;
@@ -351,8 +428,8 @@ footer{
 	height: 446px;
 	padding: 36px 101px;
 	display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-around;
 }
 .footer_container{
 	display: flex;
@@ -363,17 +440,18 @@ footer{
 
 .footer_telefono{
 	display: flex;
-  gap: 20px;
-  align-items: center;
-	padding-bottom: 25px; /*revisar*/
+ 	gap: 20px;
+ 	align-items: center;
+	padding-bottom: 25px; 
 }
 .footer_mail{
 	display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-	padding-bottom: 25px; /*revisar*/
+ 	flex-direction: row;
+ 	justify-content: flex-start;
+ 	align-items: center;
+ 	gap: 20px;
+	padding-bottom: 25px; 
+
 }
 .footer_ubicacion{
 	display: flex;
@@ -384,8 +462,8 @@ footer{
 }
 .footer_cont_contacto{
 	display: flex;
-  flex-direction: column;
-  gap: 25px;
+	flex-direction: column;
+	gap: 25px;
 	width: 30%;
 }
 .footer_cont_navegacion{
@@ -394,9 +472,9 @@ footer{
 	gap: 25px;
 	align-items: flex-start;
 	width: 30%;
-    padding-left: 30px;
-    border-right: 2px solid rgba(255, 255, 255, 0.50);
-    border-left: 2px solid rgba(255, 255, 255, 0.50);
+	padding-left: 30px;
+	border-right: 2px solid rgba(255, 255, 255, 0.50);
+	border-left: 2px solid rgba(255, 255, 255, 0.50);
 }
 .footer_ul_container{
 	display: flex;
@@ -405,42 +483,6 @@ footer{
 }
 .footer_ul_container ul{
 	padding-bottom: 15px;
-}
-
-.footer_telefono{
-	display: flex;
-	gap: 20px;
-	align-items: center;
-}
-.footer_mail{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 20px;
-}
-.footer_ubicacion{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-	gap: 20px;
-}
-.footer_cont_contacto{
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-}
-.footer_cont_navegacion{
-	display: flex;
-	flex-direction: column;
-	gap: 25px;
-	align-items: flex-start;
-}
-.footer_ul_container{
-	display: flex;
-	flex-direction: row;
-	gap: 54px;
 }
 
 h4{
