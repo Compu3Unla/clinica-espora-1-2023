@@ -8,32 +8,32 @@
 <body>
 	<header>
 		<div class="container-logo-contacto">
-			<img src="img/header/svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<img src="img/header/svg_logo.svg" id="logo_espora" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
 			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
 				<div class="telefono">
-					<details>
+					<details id="desplegable_telefono">
 						<summary><img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono"></summary>	
-						<div class="text_container_telefono">
-							<p> Contactanos al teléfono </p>
-							<p style="font-size: 24px">(011) 5034-6000</p>
+						<div class="text_container_telefono contacto_text_container">
+							<p style="font-size: 20px;"> Contactanos al teléfono </p>
+							<p style="font-size: 24px; font-weight: 600;">(011) 5034-6000</p>
 						</div>
 					</details>
 				</div>
 				<div class="mail">
-					<details>
+					<details id="desplegable_mail">
 						<summary><img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email"></summary>
-						<div class="text_container_mail">
-							<p>Envianos tus consultas a:</p>
-							<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
+						<div class="text_container_mail contacto_text_container">
+							<p style="font-size: 20px;">Envianos tus consultas a:</p>
+							<a style="font-size: 24px; font-weight: 600;"> info@clinicaespora.com.ar</a>
 						</div>
 					</details>
 				</div>
 				<div class="ubicacion">
-					<details>
+					<details id="desplegable_ubicacion">
 						<summary><img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps"></summary>
-						<div class="text_container_ubicacion">
-							<p>Nuestra dirección:</p>
-							<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
+						<div class="text_container_ubicacion contacto_text_container">
+							<p style="font-size: 20px;">Nuestra dirección:</p>
+							<a style="font-size: 24px; font-weight: 600;"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
 						</div>
 					</details>
 				</div>
@@ -46,8 +46,8 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Quienes Somos</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="infraestructura.html">Quienes Somos</a></li>
 					<li><a href="servicios.html">Servicios</a></li>
 					<li><a href="#">Como llegar</a></li>
 				</ul>
@@ -72,10 +72,16 @@
 		</section>
 		<section id="galeria_container">
 			<h2>GALER&Iacute;A</h2>
-			<ul>
-				<li>hola</li>
-				<li>hola</li>
-			</ul>
+			<div class="slider_frame">
+				<ul>
+					<li><img src="img/main/img_carrusel_a.jpg" width="100%" height="100%" alt="imagen del equipo de la clinica espora"></li>
+					<li><img src="img/main/img_carrusel_b.jpg" width="100%" height="100%" alt="imagen de equipo de internacion"></li>
+					<li><img src="img/main/img_carrusel_c.jpg" width="100%" height="100%" alt="imagen de equipo de la clinica espora"></li>
+					<li><img src="img/main/img_carrusel_d.jpg" width="100%" height="100%" alt="imagen de personal de la clinica en la recepcion"></li>
+					<li><img src="img/main/img_carrusel_e.jpg" width="100%" height="100%" alt="imagen de un termometro en donde una persona esta siendo tomada la temperatura"></li>
+				</ul>
+			</div>
+
 		</section>
 		<article id="sobre_nosotros_container">
 			<h2>SOBRE NOSOTROS</h2>
@@ -85,7 +91,7 @@
 				<p>De esta manera lograr los objetivos necesarios para poder apuntalar nuestro crecimiento y la reinversi&oacute;n en tecnolog&iacute;a adecuada a nuestras necesidades y del paciente.</p>
 				<p>Esto que contin&uacute;a siendo un desaf&iacute;o, es encarado por CL&iacute;NICA ESPORA con total convicci&oacute;n ya que pretendemos agotar todos los esfuerzos para alcanzar los resultados previstos, convencidos en nuestra capacidad instalada y el capital humano que todav&iacute;a hoy es muy necesario para nuestra poblaci&oacute;n de influencia.</p>
 			</div>
-			<video src="video/video_clinica.mp4" class="video" width="1144px" height="645px" controls autoplay preload type="video/mp4" ></video>
+			<video src="video/video_clinica.mp4" class="video" width="1144px" height="645px" controls preload type="video/mp4" ></video>
 		</article>
 	</main>
 	<footer>

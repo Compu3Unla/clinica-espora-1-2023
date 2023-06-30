@@ -8,28 +8,34 @@
 <body>
 	<header>
 		<div class="container-logo-contacto">
-			<img src="img/header/svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<img src="img/header/svg_logo.svg" id="logo_espora" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
 			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
 				<div class="telefono">
-					<img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono">	
-					<div class="text_container_telefono">
-						<p> Contactanos al teléfono </p>
-						<p style="font-size: 24px">(011) 5034-6000</p>
-					</div>
+					<details id="desplegable_telefono">
+						<summary><img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono"></summary>	
+						<div class="text_container_telefono contacto_text_container">
+							<p style="font-size: 20px;"> Contactanos al teléfono </p>
+							<p style="font-size: 24px; font-weight: 600;">(011) 5034-6000</p>
+						</div>
+					</details>
 				</div>
 				<div class="mail">
-					<img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email">
-					<div class="text_container_mail">
-						<p>Envianos tus consultas a:</p>
-						<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
-					</div>
+					<details id="desplegable_mail">
+						<summary><img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email"></summary>
+						<div class="text_container_mail contacto_text_container">
+							<p style="font-size: 20px;">Envianos tus consultas a:</p>
+							<a style="font-size: 24px; font-weight: 600;"> info@clinicaespora.com.ar</a>
+						</div>
+					</details>
 				</div>
 				<div class="ubicacion">
-					<img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps">
-					<div class="text_container_ubicacion">
-						<p>Nuestra dirección:</p>
-						<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
-					</div>
+					<details id="desplegable_ubicacion">
+						<summary><img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps"></summary>
+						<div class="text_container_ubicacion contacto_text_container">
+							<p style="font-size: 20px;">Nuestra dirección:</p>
+							<a style="font-size: 24px; font-weight: 600;"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
+						</div>
+					</details>
 				</div>
 			</div>
 		</div>
@@ -40,9 +46,9 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Quienes Somos</a></li>
-					<li><a href="#">Servicios</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="infraestructura.html">Quienes Somos</a></li>
+					<li><a href="servicios.html">Servicios</a></li>
 					<li><a href="#">Como llegar</a></li>
 				</ul>
 			</nav>
@@ -73,7 +79,7 @@
 	<div class="footer_container">
 			<div class="footer_cont_contacto">
 				<h4>Contacto</h4>
-				<div>
+				<adress>
 					<div class="footer_telefono">
 						<img src="img/footer/svg_telefono.svg" width= "20px" height="20px" alt="icono telefono">
 						<p>(011) 5034-6000</p>
@@ -86,26 +92,26 @@
 						<img src="img/footer/svg_ubicacion.svg" width="20px" height="24.62px" alt="icono ubicacion">
 						<p>Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</p>
 					</div>
-				</div>
+				</adress>
 			</div>
 			<div class="footer_cont_navegacion">
 				<h4>Navegación</h4>
 				<div class="footer_ul_container">
 					<ul>
-						<li><a href="#">Servicios</a></li>
-						<li><a href="#">Infraestructuras</a></li>
-						<li><a href="#">Especialidadess</a></li>
-						<li><a href="#">Obra Socials</a></li>
-						<li><a href="#">Servicio de guardiass</a></li>
-						<li><a href="#">Horarios de visitas</a></li>
-						<li><a href="#">Cuerpo médicos</a></li>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="infraestructura.html">Infraestructura</a></li>
+						<li><a href="#">Especialidades</a></li>
+						<li><a href="#">Obra Social</a></li>
+						<li><a href="guardias.html">Servicio de guardias</a></li>
+						<li><a href="#">Horarios de visita</a></li>
+						<li><a href="#">Cuerpo médico</a></li>
 					</ul>
 					<ul>
-						<li><a href="#">Residencias</a></li>
+						<li><a href="residencias.html">Residencias</a></li>
 						<li><a href="#">Como llegar</a></li>
 						<li><a href="#">Visualmedia</a></li>
 						<li><a href="#">Espora salud</a></li>
-						<li><a href="#">Solicitar promotor</a></li>
+						<li><a href="formulario.html">Solicitar promotor</a></li>
 						<li><a href="#">Resultados lab</a></li>
 						<li><a href="#">Prestadores</a></li>
 					</ul>
