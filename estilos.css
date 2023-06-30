@@ -65,8 +65,9 @@ header a{
 	align-items: center;
 }
 /*----------ACÁ ES DONDE EMPIEZA LA MAGIA NEGRA DE LOS ICONOS DEL HEADER-------------*/
-summary{
+.contacto summary{
 	padding:10px;
+	list-style: none;
 }
 .contacto summary{
 	position: relative;
@@ -387,6 +388,43 @@ form div {
 	margin: 50px;
 	width: 60%;
 }
+.slider_frame{
+	width: 505px;
+	height: 505px;
+	margin: 24px auto 0;
+	overflow: hidden;
+}
+.slider_frame ul{
+	display: flex;
+	padding: 0;
+	width: 500%;
+	animation: slider 15s infinite alternate ease-in-out;
+}
+.slider_frame li{
+	list-style: none;
+	width: 100%;
+}
+.slider_frame img{
+	width: 100%;
+}
+
+@keyframes slider{
+	0%{margin-left: 0%;}
+	20%{margin-left: 0%;}
+	
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+	
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+	
+	75%{margin-left: -300%;}
+	95%{margin-left: -300%;}
+	
+	105%{margin-left: -400%;}
+	125%{margin-left: -400%;}
+}
+
 
 /*MAIN RESIDENCIAS.HTML*/
 .contenido-residencias{
@@ -439,6 +477,9 @@ form div {
 }
 .contenedor-guardias p{
 	margin: 20px 0px;
+}
+.contenedor-guardias .itms{
+	margin:20px 0px;
 }
 /*-------------------------FOOTER-------------------------*/
 footer{
