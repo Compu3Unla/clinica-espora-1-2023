@@ -8,32 +8,32 @@
 <body>
 	<header>
 		<div class="container-logo-contacto">
-			<img src="img/header/svg_logo.svg" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
+			<img src="img/header/svg_logo.svg" id="logo_espora" width= "156px" height= "75.67px" alt="Logo de la Clinica Espora">
 			<div class="contacto"> <!-- acá va la animación. habría que ver cómo se hace para pasarla de figma a html -->
 				<div class="telefono">
-					<details>
+					<details id="desplegable_telefono">
 						<summary><img src="img/header/a_telefono.svg" id="telefono_icon" width= "60px" height= "60px" alt="icono teléfono"></summary>	
-						<div class="text_container_telefono">
-							<p> Contactanos al teléfono </p>
-							<p style="font-size: 24px">(011) 5034-6000</p>
+						<div class="text_container_telefono contacto_text_container">
+							<p style="font-size: 20px;"> Contactanos al teléfono </p>
+							<p style="font-size: 24px; font-weight: 600;">(011) 5034-6000</p>
 						</div>
 					</details>
 				</div>
 				<div class="mail">
-					<details>
+					<details id="desplegable_mail">
 						<summary><img src="img/header/a_email.svg" id="mail_icon" width= "60px" height= "60px" alt= "icono email"></summary>
-						<div class="text_container_mail">
-							<p>Envianos tus consultas a:</p>
-							<a style="font-size: 24px"> info@clinicaespora.com.ar</a>
+						<div class="text_container_mail contacto_text_container">
+							<p style="font-size: 20px;">Envianos tus consultas a:</p>
+							<a style="font-size: 24px; font-weight: 600;"> info@clinicaespora.com.ar</a>
 						</div>
 					</details>
 				</div>
 				<div class="ubicacion">
-					<details>
+					<details id="desplegable_ubicacion">
 						<summary><img src="img/header/a_maps.svg" id="ubicacion_icon" width= "60px" height= "60px" alt= "icono maps"></summary>
-						<div class="text_container_ubicacion">
-							<p>Nuestra dirección:</p>
-							<a style="font-size: 24px"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
+						<div class="text_container_ubicacion contacto_text_container">
+							<p style="font-size: 20px;">Nuestra dirección:</p>
+							<a style="font-size: 24px; font-weight: 600;"> Av. Espora 645, Adrogué, Alte. Brown - Bs. As.</a>
 						</div>
 					</details>
 				</div>
@@ -46,8 +46,8 @@
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Quienes Somos</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="infraestructura.html">Quienes Somos</a></li>
 					<li><a href="servicios.html">Servicios</a></li>
 					<li><a href="#">Como llegar</a></li>
 				</ul>
@@ -63,7 +63,7 @@
 					<img src="img/header/imagenes_menu/svg_servicios.svg" width= "58.68px" height= "51.23" alt= "icono de servicios">
 					<p>SERVICIOS</p>	
 				</a>
-				<a href="#">
+				<a href="infraestructura.html">
 					<img src="img/header/imagenes_menu/svg_infraestructura.svg" width= "70px" height= "60" alt= "icono de infraestructura">
 					<p>INFRAESTRUCTURA</p>
 				</a>
@@ -119,7 +119,7 @@
 		</section>
 		<div class="button_whatsapp">
 			<a href="#">
-				<img src="img/main/button_whatsapp.svg" width="76px" height="76px" alt= "icono de whatsapp">
+				<img src="img/main/button_wpp.svg" width="76px" height="76px" alt= "icono de whatsapp">
 			</a>
 		</div>
 	</main>
@@ -146,8 +146,8 @@
 				<h4>Navegación</h4>
 				<div class="footer_ul_container">
 					<ul>
-						<li><a href="#">Servicios</a></li>
-						<li><a href="#">Infraestructura</a></li>
+						<li><a href="servicios.html">Servicios</a></li>
+						<li><a href="infraestructura.html">Infraestructura</a></li>
 						<li><a href="#">Especialidades</a></li>
 						<li><a href="#">Obra Social</a></li>
 						<li><a href="#">Servicio de guardias</a></li>
@@ -159,7 +159,7 @@
 						<li><a href="#">Como llegar</a></li>
 						<li><a href="#">Visualmedia</a></li>
 						<li><a href="#">Espora salud</a></li>
-						<li><a href="#">Solicitar promotor</a></li>
+						<li><a href="formulario.html">Solicitar promotor</a></li>
 						<li><a href="#">Resultados lab</a></li>
 						<li><a href="#">Prestadores</a></li>
 					</ul>
