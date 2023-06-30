@@ -6,7 +6,7 @@
 	font-family: 'Inter', sans-serif;
 	padding: 0;
 	margin: 0;
-	list-style: none;
+	
 }
 a{
 	text-decoration: none;
@@ -160,7 +160,6 @@ h2{
 
 
 main h2{
-	width: 60%;
 	border-bottom: 2px solid #E5E5E5;
 	padding-bottom: 10px;
 }
@@ -241,13 +240,13 @@ main h2{
 	align-items: center;
 }
 
+	/*-------------------------MAIN SERVICIOS.HTML-------------------------*/
 #menu{
 	display:flex;
 	flex-direction: column;
 	padding-top: 40px;
+	padding-bottom: 54px;
 }
-
-	/*-------------------------MAIN SERVICIOS.HTML-------------------------*/
 .cajatitulo{
 	border-radius: 35px 35px 0px 35px;
 	background-color:#D9D9D9;
@@ -261,6 +260,12 @@ main h2{
 	color:#1F518F;
 	
 }
+
+summary{
+	padding:10px;
+}
+
+
 
 .caja-contenido{
 	font-size:13px;
@@ -384,10 +389,24 @@ form div {
 }
 
 /*MAIN RESIDENCIAS.HTML*/
+.contenido-residencias{
+	padding-right:749px;
+}
+
 #menu-residencias{
 	display:flex;
 	flex-direction: column;
-	padding-top: 40px;
+	align-items:center;
+	padding: 40px 0px 50px 301px;
+}
+
+.residencias-contenedores{
+	display:flex;
+	align-items:flex-start;
+	padding-left:100px;
+	padding-top:50px;
+	line-height: 25px;
+	
 }
 .titulo-cajas{
 	font-family: 'Inter';
@@ -399,7 +418,7 @@ form div {
 .caja-titulo-residencias{
 	border-radius: 35px 35px 0px 35px;
 	background-color:#D9D9D9;
-	width:971px;
+	width:800px;
 	margin-bottom: 0px;
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
 }
@@ -407,7 +426,7 @@ form div {
 	font-size:13px;
 	background-color:#D9D9D9;
 	border-radius: 0px 0px 0px 35px; 
-	width: 919px;
+	width: 748px;
 	margin-left:20px;
 	padding:36px; 
 	box-shadow: 0px 0px 11px rgb(0 0 0 / 40%);
@@ -498,6 +517,7 @@ footer p, footer a, footer li{
 	color: #ffffff;
 	font-size: 20px;
 	line-height: 35px;
+	list-style:none;
 }
 
 
