@@ -336,6 +336,14 @@ form div {
 .video{
 	margin-top: 5%;
 }
+/*-------MAIN GUADIAS.HTML-----*/
+.contnedor-guardias{
+	width: 60%;
+	margin: 50px;
+}
+.contenedor-guardias p{
+	margin: 20px 0px;
+}
 /*-------------------------FOOTER-------------------------*/
 footer{
 	background-color: #1F518F;
